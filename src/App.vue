@@ -1,13 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
   <CountryList/>
+  
 </template>
 
 <script>
+
+//import HelloWorld from './components/HelloWorld' 
 import CountryList from './components/CountryList' 
 export default {
   name: 'App',
   components: {
+    //HelloWorld,
     CountryList
   }
 }
