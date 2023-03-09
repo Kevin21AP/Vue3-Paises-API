@@ -1,7 +1,6 @@
 <template>
   <div>
-    <input type="text" v-model="searchText" @input="searchCountries"
-    :style="{ border: '1px solid #ccc', padding: '5px', backgroundColor: '#fff'}">
+    <input type="text" v-model="searchText" @input="searchCountries" class="search-country">
     <a-table :columns="columns" :data-source="countries" class="country-table" :rowKey="record => record.key">
 
       <template #flag="{ text }">
@@ -110,4 +109,9 @@ export default {
 .country-table {
   margin-top: 20px;
 }
+.search-country
+{ 
+border: 1px solid #ccc;
+padding: 5px;
+background: #fff;}
 </style>
